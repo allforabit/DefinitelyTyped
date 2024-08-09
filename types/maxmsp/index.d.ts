@@ -608,6 +608,7 @@ declare class LiveAPI {
      * (the object sends a bang from its left outlet when the Device is fully initialized, including the Live API). Legacy note: previous versions of the LiveAPI object required the jsthis object's
      * this.patcher property as the first argument. For backward-compatibility, this first argument is still supported, but is no longer necessary.
      */
+    constructor(name: string);
     constructor(callback: any, name: string);
 
     /**
